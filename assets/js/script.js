@@ -82,7 +82,7 @@ function checkVictory(){
 
 function changeNumberOfMoves(numberOfMoves){
 	const numberOfMovesText = document.getElementById('numbersOfMoves');
-	numberOfMovesText.textContent = `Pontuação: ${numberOfMoves}`;
+	numberOfMovesText.textContent = `n° movimentos: ${numberOfMoves}`;
 }
 
 function setDifficulty(){
