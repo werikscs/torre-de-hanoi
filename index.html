@@ -1,51 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
 
-	<link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style.css" />
 
-	<title>Torre de Hanói</title>
-</head>
-<body>
-	<header><h1>torre de hanói</h1></header>
+    <title>Torre de Hanói</title>
+  </head>
+  <body>
+    <header><h1>torre de hanói</h1></header>
 
-	<nav>
-		<section class="startGame">
-			<label class="textDifficulty">Dificuldade</label>
-			
-			<select class="selectDifficulty" name="dificulties" id="dificulties">
-				<option value="easy" selected>Fácil</option>
-				<option value="normal">Normal</option>
-				<option value="hard">Difícil</option>
-			</select>
+    <nav>
+      <section class="startGame">
+        <label class="textDifficulty">Dificuldade</label>
 
-			<button id="btnStart" class="btnStart">start</button>
-		</section>
+        <select class="selectDifficulty" name="dificulties" id="dificulties">
+          <option value="easy" selected>Fácil</option>
+          <option value="normal">Normal</option>
+          <option value="hard">Difícil</option>
+        </select>
 
-		<section class="resetGame disabled">
-			<button id="resetGame" class="btnResetGame">reset</button>
-			<span id="numbersOfMoves" class="numbersOfMoves">n° movimentos: 0</span>
-		</section>
+        <button id="btnStart" class="btnStart">start</button>
+      </section>
 
-	</nav>
+      <section class="resetGame disabled">
+        <button id="returnHome" class="btnResetGame">inicio</button>
+        <button id="resetGame" class="btnResetGame">reset</button>
+        <span id="numbersOfMoves" class="numbersOfMoves">n° movimentos: 0</span>
+      </section>
+    </nav>
 
-	<main class="gameBoard disabled"></main>
+    <main class="gameBoard disabled"></main>
 
-	<div class="msgWinnerContainer disabled">
-		<span class="msgWinner">Parabéns! Você concluiu o desafio!</span>
-		<button id="btnCloseAlertCompleted" class="btnCloseAlertCompleted">fechar</button>
-	</div>
+    <div class="msgWinnerContainer disabled">
+      <span class="msgWinner">Parabéns! Você concluiu o desafio!</span>
+      <button id="btnCloseAlertCompleted" class="btnCloseAlertCompleted">
+        fechar
+      </button>
+    </div>
 
-	<div class="msgIntroductionContainer">
-		<span class="msgIntroduction">Torre de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo. O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.</span>
-	</div>
+    <div class="msgIntroductionContainer">
+      <span class="msgIntroduction">
+        Torre de Hanói é um quebra-cabeça que consiste em uma base contendo três
+        pinos, em um dos quais são dispostos alguns discos uns sobre os outros,
+        em ordem crescente de diâmetro, de cima para baixo. O problema consiste
+        em passar todos os discos de um pino para outro qualquer, usando um dos
+        pinos como auxiliar, de maneira que um disco maior nunca fique em cima
+        de outro menor em nenhuma situação. O número de discos pode variar sendo
+        que o mais simples contém apenas três.
+      </span>
+    </div>
 
-	<script src="assets/js/script.js"></script>
-
-</body>
+    <script src="assets/js/script.js"></script>
+  </body>
 </html>
